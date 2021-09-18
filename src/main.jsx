@@ -2,17 +2,17 @@ import ReactDOM from 'react-dom'
 import { I18nextProvider } from 'react-i18next'
 import { Provider } from 'react-redux'
 import App from './App'
-import './index.css'
+import './index.scss'
 import { store } from './store'
-import i18n from './utils/i18n'
+import i18next from './utils/i18n'
 
 ReactDOM.render(
-  <I18nextProvider i18n={i18n}>
-    <Provider store={store}>
-      <React.StrictMode>
+  <Provider store={store}>
+    <React.StrictMode>
+      <I18nextProvider i18n={i18next}>
         <App />
-      </React.StrictMode>
-      , document.getElementById('root')
-    </Provider>
-  </I18nextProvider>
+      </I18nextProvider>
+    </React.StrictMode>
+  </Provider>,
+  document.getElementById('root')
 )
