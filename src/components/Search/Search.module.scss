@@ -1,0 +1,18 @@
+.c-search {
+  display: grid;
+  grid-template: max-content / 1fr max-content;
+  gap: 1px;
+  border-radius: 4px;
+  &_field {
+    border: none;
+    padding: 0.5rem;
+    &:focus {
+      outline-style: inset;
+      outline-width: 1px;
+      outline-color: var(--color-lighter-gray);
+      & ~ button {
+        box-shadow: 0 0 0 1px var(--color-lighter-gray);
+      }
+    }
+  }
+}

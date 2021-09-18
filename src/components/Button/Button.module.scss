@@ -1,0 +1,17 @@
+.c-btn {
+  border: none;
+  cursor: pointer;
+  &:focus {
+    outline-style: inset;
+    outline-color: var(--color-lighter-gray);
+    outline-width: 1px;
+  }
+  &_icon {
+    display: flex;
+    background-color: var(--bgColor);
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+  }
+}
