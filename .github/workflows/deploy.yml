@@ -2,13 +2,12 @@ name: deploy GP
 
 on:
   push:
-    branches:
-      - main
+    branches:  [main]
 
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
@@ -17,7 +16,7 @@ jobs:
       with:
         node-version: 14
     - name: Install NPM packages
-      run: npm install --no-optional --no-shrinkwrap --no-package-lock
+      run: npm ci
     - name: Build project
       run: npm run build
     - name: Run tests

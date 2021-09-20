@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=https://malopez1578.github.io/meli-challenge/",
     "serve": "vite preview",
     "test": "vite --config vite.config.test.js",
     "lint": "eslint --ext .jsx,.js src",
