@@ -1,1 +1,0 @@
-import{R as e}from"./vendor.757739d2.js";import{S as a}from"./index.abe4aa55.js";var t="_c-section_1702h_1";const o=()=>e.createElement("div",{className:`o-section ${t}`},e.createElement("img",{src:"https://malopez1578.github.io/meli-challenge/assets/Logo_ML@2x.png.d27933d2.png",alt:"logo mercado libre"}),e.createElement(a,null));export{o as default};
