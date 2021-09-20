@@ -1,0 +1,10 @@
+.c-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  form {
+    box-shadow: 0 0 2px 0px var(--color-lighter-gray);
+  }
+}

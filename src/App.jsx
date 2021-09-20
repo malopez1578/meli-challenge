@@ -1,10 +1,21 @@
-import { Search } from './components'
+import { createBrowserHistory } from 'history'
+import { Suspense } from 'react'
+import { Router } from 'react-router'
+import { Header } from './components'
+import { Routes } from './router'
+
+const newHistory = createBrowserHistory()
 
 function App() {
   return (
-    <div className="App">
-      <Search />
-    </div>
+    <>
+      <Suspense fallback={<span>loading..</span>}>
+        <Router history={newHistory}>
+          <Header />
+          <Routes />
+        </Router>
+      </Suspense>
+    </>
   )
 }
 

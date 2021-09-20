@@ -1,0 +1,13 @@
+.o-header {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--color-yellow);
+  padding: 0.5rem;
+  gap: 10px;
+  grid-template: max-content / max-content 0.9fr;
+  @media screen and (max-width: 380px) {
+    grid-template: max-content / 50px 0.9fr;
+  }
+}
