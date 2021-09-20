@@ -14,4 +14,11 @@
     user-select: none;
     cursor: pointer;
   }
+  &[type='primary'] {
+    background: var(--color-blue);
+    color: var(--bgColor);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    min-width: 150px;
+  }
 }
