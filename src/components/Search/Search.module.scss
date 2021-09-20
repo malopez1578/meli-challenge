@@ -1,11 +1,13 @@
 .c-search {
   display: grid;
-  grid-template: max-content / 1fr max-content;
+  grid-template: max-content / 1fr 2.575rem;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
   gap: 1px;
   border-radius: 4px;
   &_field {
     border: none;
     padding: 0.5rem;
+    font-size: 1.125rem;
     &:focus {
       outline-style: inset;
       outline-width: 1px;
