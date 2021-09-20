@@ -48,4 +48,12 @@
   &_desc-text {
     color: var(--color-light-gray);
   }
+
+  @media screen and (max-width: 40.3125rem) {
+    display: flex;
+    flex-direction: column;
+    &_img {
+      height: 18.75rem;
+    }
+  }
 }
