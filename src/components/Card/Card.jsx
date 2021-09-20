@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { formatCurrency } from '../../utils/formatCurrency'
 import style from './Card.module.scss'
 
 const Card = ({ item }) => {
@@ -14,7 +15,9 @@ const Card = ({ item }) => {
         </Link>
       </figure>
       <div className={style['c-card_desc']}>
-        <p className={style['c-card_price']}>{item.price.amount}</p>
+        <p className={style['c-card_price']}>
+          {formatCurrency(item?.price?.currency, item?.price?.amount)}
+        </p>
         <Link className={style['c-card_title']} to={`/items/${item.id}`}>
           {item.title}
         </Link>

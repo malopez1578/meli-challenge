@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: var(--color-dark-gray);
 }
 
 html {
@@ -11,7 +12,6 @@ html {
   font-family: Proxima Nova, -apple-system, Helvetica Neue, Helvetica, Roboto,
     Arial, sans-serif;
 }
-
 .o-main {
   display: grid;
   grid-template: max-content 1fr / 1fr;
