@@ -1,1 +1,0 @@
-import{R as e}from"./vendor.757739d2.js";import{S as o}from"./index.bb7006e4.js";var t="_c-section_1702h_1";const s=()=>e.createElement("div",{className:`o-section ${t}`},e.createElement("img",{src:"/assets/Logo_ML@2x.png.d27933d2.png",alt:"logo mercado libre"}),e.createElement(o,null));export{s as default};
