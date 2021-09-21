@@ -1,0 +1,1 @@
+import{R as e}from"./vendor.142e00de.js";var a="_c-not_found_uc481_1",o="_c-not_found-text_uc481_8";const s=()=>e.createElement("div",{className:a},e.createElement("p",{className:o},"Ooops! No hay resultados para su búsqueda"));export{s as default};
