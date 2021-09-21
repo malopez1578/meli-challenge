@@ -10,10 +10,7 @@ function App() {
   return (
     <>
       <Suspense fallback={<Loading />}>
-        <BrowserRouter
-          basename="https://malopez1578.github.io/meli-challenge/"
-          history={newHistory}
-        >
+        <BrowserRouter history={newHistory}>
           <Header />
           <Routes />
         </BrowserRouter>

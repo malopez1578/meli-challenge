@@ -1,6 +1,13 @@
 {
   "name": "meli-challenge",
   "version": "0.0.0",
+  "homepage": "/meli-challenge/",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malopez1578/meli-challenge.git"
+  },
+  "author": "Miguel López <malopez1578@gmail.com>",
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=https://malopez1578.github.io/meli-challenge/",
