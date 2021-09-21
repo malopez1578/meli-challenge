@@ -1,7 +1,7 @@
 import { createBrowserHistory } from 'history'
 import { Suspense } from 'react'
-import { Router } from 'react-router'
-import { Header } from './components'
+import { BrowserRouter } from 'react-router-dom'
+import { Header, Loading } from './components'
 import { Routes } from './router'
 
 const newHistory = createBrowserHistory()
@@ -9,11 +9,14 @@ const newHistory = createBrowserHistory()
 function App() {
   return (
     <>
-      <Suspense fallback={<span>loading..</span>}>
-        <Router history={newHistory}>
+      <Suspense fallback={<Loading />}>
+        <BrowserRouter
+          basename="https://malopez1578.github.io/meli-challenge/"
+          history={newHistory}
+        >
           <Header />
           <Routes />
-        </Router>
+        </BrowserRouter>
       </Suspense>
     </>
   )

@@ -26,7 +26,7 @@ const Search = () => {
   }
 
   return (
-    <form method="GET" onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
       <label className={style['c-search']} htmlFor="searchProduct">
         <input
           className={style['c-search_field']}

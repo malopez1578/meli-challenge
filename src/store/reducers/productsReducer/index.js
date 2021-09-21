@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-const initialState = { product: {} }
+const initialState = { product: {}, loading: 'idle', error: {} }
 
 const searchReducer = createSlice({
   name: 'product',
@@ -9,11 +9,17 @@ const searchReducer = createSlice({
     setProductById(state, { payload }) {
       state.product = payload
     },
+    setLoading(state, { payload }) {
+      state.loading = payload
+    },
+    setError(state, { payload }) {
+      state.error = payload
+    },
   },
 })
 
-const { setProductById } = searchReducer.actions
+const { setProductById, setLoading, setError } = searchReducer.actions
 
-export { setProductById }
+export { setProductById, setLoading, setError }
 
 export default searchReducer.reducer

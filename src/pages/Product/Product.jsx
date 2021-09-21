@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router'
 import { CardProduct } from '../../components'
-import { getProductsById } from '../../services/products.service'
+import { getProductsById } from '../../services/product.service'
 
 const Product = () => {
   const { id } = useParams()
